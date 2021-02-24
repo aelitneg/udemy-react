@@ -55,8 +55,42 @@ App Component is a fucntion which returns JSX
 -   Class uses different syntax
     -   'className`replaces`class` (avoid keyword collision)
 -   JSX can reference JavaScript variables
+
     -   Curly Braces Reference Limitations
         -   `Objects are not valid as a React child`
-    - Forbidden keywords (check the console) 
+    -   Forbidden keywords (check the console)
 
+    ## Lifecycle Methods
 
+    -   Called automatically by React if defined in the class
+    -   Methods
+
+        -   constructor
+            -   state initialization
+            -   one time setup
+        -   render
+            -   return JSX
+        -   componentDidMount
+            -   one time async data requests
+        -   componentDidUpdate
+            -   called when state changes, props update
+        -   componentWillUnmount
+            -   cleanup code
+        -   shouldComponentUpdate
+        -   getDerivedStateFromProps
+        -   getSnapshotBeforeUpdate
+
+    -   State can be defined as a top level class property:
+
+    ```javascript class X extends React.Component {
+            state = { prop: 'value' }
+        }
+    ```
+
+    -   setState will re-render children
+
+    -   Functional components can have MyComponent.defaultProps defined
+        -   ```javascript
+            MyComponent.defaultProps = { prop: "value" };
+            ```
+    -   Avoid conditionals in render method (see `./seasons.index`) with `renderContent()` helper function
