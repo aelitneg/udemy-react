@@ -1,5 +1,12 @@
 {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
-    "prettier.tabWidth": 4
+    "prettier.tabWidth": 4,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "prettier.configPath": "/Users/andrew.gentile/Developer/devtools/.prettierrc.js",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
