@@ -89,8 +89,16 @@ App Component is a fucntion which returns JSX
 
     -   setState will re-render children
 
-    -   Functional components can have MyComponent.defaultProps defined
-        -   ```javascript
-            MyComponent.defaultProps = { prop: "value" };
-            ```
+-   Functional components can have MyComponent.defaultProps defined
+    -   ```javascript
+        MyComponent.defaultProps = { prop: "value" };
+        ```
     -   Avoid conditionals in render method (see `./seasons.index`) with `renderContent()` helper function
+
+## Refs 
+- Give access to the DOM elements directly 
+- Create in the constructor
+- Instance varaible for class 
+- Passed to JSX elements as a prop
+
+
