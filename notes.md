@@ -110,3 +110,6 @@ App Component is a fucntion which returns JSX
 -   Primitive Hooks (included with react)
 -   Can create custom hooks
     -   usually wrappers around other primitive hooks
+-   `[state, setter] = useState(defaultValue)`
+    -   default does not get applied on re-render
+    -   multiple pieces of state require multiple calls to `useState()`
