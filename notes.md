@@ -38,9 +38,9 @@ App Component is a fucntion which returns JSX
     -   ```javascript
         const App = () => {
             return /*#__PURE__*/ React.createElement(
-                "div",
+                'div',
                 null,
-                "Hello World!"
+                'Hello World!',
             );
         };
         ```
@@ -91,14 +91,22 @@ App Component is a fucntion which returns JSX
 
 -   Functional components can have MyComponent.defaultProps defined
     -   ```javascript
-        MyComponent.defaultProps = { prop: "value" };
+        MyComponent.defaultProps = { prop: 'value' };
         ```
     -   Avoid conditionals in render method (see `./seasons.index`) with `renderContent()` helper function
 
-## Refs 
-- Give access to the DOM elements directly 
-- Create in the constructor
-- Instance varaible for class 
-- Passed to JSX elements as a prop
+## Refs
 
+-   Give access to the DOM elements directly
+-   Create in the constructor
+-   Instance varaible for class
+-   Passed to JSX elements as a prop
 
+## Hooks
+
+-   For functional components
+-   useState, useEffect, useRef
+-   Tools to write reusable code
+-   Primitive Hooks (included with react)
+-   Can create custom hooks
+    -   usually wrappers around other primitive hooks
