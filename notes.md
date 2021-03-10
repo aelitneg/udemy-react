@@ -113,3 +113,23 @@ App Component is a fucntion which returns JSX
 -   `[state, setter] = useState(defaultValue)`
     -   default does not get applied on re-render
     -   multiple pieces of state require multiple calls to `useState()`
+-   useEffect (Lifecycle Methods)
+    -   -   `useEffect(() => {//callback}, [])`
+        -   runs on mount only, after component is rendered
+    -   `useEffect(() => {//callback})`
+        -   runs on every render
+    -   `useEffect(() => {//callback}, [variable])`
+        -   runs on mount and when variable is changed
+        -   cannot be marked `async`
+        -   ```javascript
+            useEffect(() => {
+                // invoked when useEffect() is called
+                return () => {
+                    // invoked before subsequent calls to useEffect()
+                };
+            };
+            ```
+
+## dangerouslySetInnerHTML
+
+-   `<tag dangerouslySetInnerHTML={{__html: 'html string'}}>`
