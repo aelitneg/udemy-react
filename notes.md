@@ -129,6 +129,8 @@ App Component is a fucntion which returns JSX
                 };
             };
             ```
+        -   cleanup function called when element is being removed from DOM as well
+-   `useRef()` When elements removed from dom, refs set to null
 
 ## dangerouslySetInnerHTML
 
