@@ -135,3 +135,11 @@ App Component is a fucntion which returns JSX
 ## dangerouslySetInnerHTML
 
 -   `<tag dangerouslySetInnerHTML={{__html: 'html string'}}>`
+
+## Custom Hooks
+
+-   Good way to make reusable code in React, besides components
+-   Created by extracting hook related code out of function component
+    -   Components make JSX reusable
+    -   Custom Hooks make Hook logic reusable
+-   Have one (1) single purpose
