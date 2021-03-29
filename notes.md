@@ -143,3 +143,12 @@ App Component is a fucntion which returns JSX
     -   Components make JSX reusable
     -   Custom Hooks make Hook logic reusable
 -   Have one (1) single purpose
+
+## Redux
+
+-   action creator is a function which returns an action (plain JS object)
+-   action is an object, which has a `type` and `payload` properties
+    -   describes some change to be made to the data in the application
+-   dispatch takes actions, copies the object, and sends to reducers
+-   reducer is a function which takes takes an action and a slice of state and processes the action
+-   state is shared data
