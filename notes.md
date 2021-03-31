@@ -159,3 +159,14 @@ App Component is a fucntion which returns JSX
 - dispatch takes actions, copies the object, and sends to reducers
 - reducer is a function which takes takes an action and a slice of state and processes the action
 - state is shared data
+- Reducers
+  - Must return _anything_ but undefined
+  - Must not reach outside of its function to determine state / values
+  - Must not mutate its input state argument
+
+## Redux-Thunk
+
+- Action creators _can_ return an object `{ type, payload }`
+- Action creators _can_ return a function, which will get invoked
+  - Receives `dispatch()` and `getState()` as arguments
+- Allows for manually calling `dispatch()` after an async operation
