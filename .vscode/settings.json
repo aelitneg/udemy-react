@@ -5,8 +5,8 @@
     "editor.codeActionsOnSave": {
         "source.fixAll": true
     },
-    "prettier.configPath": "/Users/andrew.gentile/Developer/devtools/.prettierrc.js",
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "prettier.configPath": ".prettierrc.js"
 }
