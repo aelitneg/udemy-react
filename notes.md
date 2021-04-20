@@ -170,3 +170,5 @@ App Component is a fucntion which returns JSX
 - Action creators _can_ return a function, which will get invoked
   - Receives `dispatch()` and `getState()` as arguments
 - Allows for manually calling `dispatch()` after an async operation
+
+**mapStateToProps(state, ownProps)**
