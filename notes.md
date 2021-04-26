@@ -172,3 +172,21 @@ App Component is a fucntion which returns JSX
 - Allows for manually calling `dispatch()` after an async operation
 
 **mapStateToProps(state, ownProps)**
+
+## React Router
+
+- Usually do not want to install `react-router`, this is just the core package
+- `react-router-dom` is the package for browser based projects
+- `react-router-redux` is discouraged
+- multiple `Route` components can match a given route
+- Path matching 
+  - checks if path **exists** in the extracted path string
+  - `exact` matches the **entire** path
+- Use `<Router-Link>` component, not `<a>` tags 
+- Routers
+  - BrowserRouter uses everything after TLD (top level domain) 
+  - Hash router adds `/#/` and matches everything after 
+  - MemoryRouter maintains internal state 
+- BrowserRouter has issues with deployment 
+  - Need to configure all routes on the server to return index.html
+
