@@ -210,3 +210,33 @@ App Component is a fucntion which returns JSX
 
 - `<React.Fragment>` is the same as `<>`
 - JSX component to wrap multiple tags without creating a wraping tag
+
+## Context
+
+- Passes data to ANY nested child component
+- Uses a context object. Pipe between components
+  - Data into context object
+    - Default Value (when context object is created)
+      - `React.createContext(defaultValue)`, usually in separate file
+    - Provider (inside parent component)
+      - `<SomeContext.Provider value={someValue}>`
+  - Data out of context object
+    - `this.context`
+      - Must set `contextType by either
+      - `static contextType = SomeContext` (in class)
+      - `Component.contextType` (outside of class)
+    - Consumer (inside the child component
+      - `<SomeContext.Consumer>{(someValue) => {called automatically}}</SomeContext.Consumer>`
+      - The _only_ child is this function
+      - Consumer allows to pull from multiple contexts in a single component
+- Provider scopes are isolated, data is not shared between providers
+
+## Context vs. Redux
+
+- Redux
+  - Great documentation
+  - Well known design patterns
+  - Good open source 3rd party library ecosystem
+- Context
+  - No extra 3rd party libraries
+  - Hard to share data between 'store' components
