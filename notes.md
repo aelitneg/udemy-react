@@ -179,14 +179,34 @@ App Component is a fucntion which returns JSX
 - `react-router-dom` is the package for browser based projects
 - `react-router-redux` is discouraged
 - multiple `Route` components can match a given route
-- Path matching 
+- Path matching
   - checks if path **exists** in the extracted path string
   - `exact` matches the **entire** path
-- Use `<Router-Link>` component, not `<a>` tags 
+- Use `<Router-Link>` component, not `<a>` tags
 - Routers
-  - BrowserRouter uses everything after TLD (top level domain) 
-  - Hash router adds `/#/` and matches everything after 
-  - MemoryRouter maintains internal state 
-- BrowserRouter has issues with deployment 
+  - BrowserRouter uses everything after TLD (top level domain)
+  - Hash router adds `/#/` and matches everything after
+  - MemoryRouter maintains internal state
+- BrowserRouter has issues with deployment
   - Need to configure all routes on the server to return index.html
+- `<Switch>` can be used to only show one route at a time (route params)
 
+## Redux Dev Tools
+
+- Use `?debug_session=<session_name>` to start a Redux Dev Tools debug session
+  - Store persists over refresh
+  - Remove query string to exist
+
+## Redux Form
+
+- Import `reducer` from redux-form
+- _Must_ be assigned to reducer property `form`
+- handleSubmit
+  - calls preventDefault automagically
+
+## Portals
+
+## Readct Fragment
+
+- `<React.Fragment>` is the same as `<>`
+- JSX component to wrap multiple tags without creating a wraping tag
